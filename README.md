@@ -1,15 +1,6 @@
-# ZIO with Spanner
-
-Some notes from translated from [cats-http4s](https://github.com/killaitis/http4s-cloud-functions)
+# Cloud Functions with Scala in ZIO 
 
 ## Usage
-
-
-Run basic DB test
-
-```
-test:runMain HelloWorldSpec -tags DB
-```
 
 Cloud function deployment
 
@@ -19,7 +10,7 @@ cloudFunctionDeploy
 
 ## Perf results
 
-JVM language comparison
+JVM language comparison (there is no performance difference between native Java code and Scala with ZIO)
 
 | Language      | Average Time  |
 | ------------- |:-------------:|
@@ -28,4 +19,3 @@ JVM language comparison
 | Scala (lazy val) | 0.0280 secs |
 | Scala (ZIO)   | 0.0167 secs   |
 | Scala (ZIO, Spanner) | 0.0215 secs - 0.0386 secs |
-
